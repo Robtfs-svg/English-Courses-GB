@@ -1,0 +1,39 @@
+/* ================================================= */
+/* ESTILOS ADICIONALES PARA PÁGINA PRECIOS */
+/* ================================================= */
+
+.pricing-card {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    border: 1px solid #dc3545; /* Borde simple para los planes normales */
+    border-top-left-radius: 0.5rem;
+    border-top-right-radius: 0.5rem;
+}
+
+.pricing-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(220, 53, 69, 0.15) !important;
+}
+
+/* Estilo para el plan destacado (Conversación Intensiva) */
+.pricing-card-highlighted {
+    border-color: #212529 !important; /* Borde oscuro */
+    border-width: 3px !important;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.pricing-card-highlighted:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.25) !important;
+}
+
+/* Estilo del título del precio */
+.pricing-card-title {
+    font-size: 3.5rem;
+    font-weight: 700;
+}
+
+/* Estilo de la lista de características */
+.pricing-card ul {
+    font-size: 1.05rem;
+    line-height: 1.8;
+}

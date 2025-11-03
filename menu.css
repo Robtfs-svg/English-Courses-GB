@@ -1,0 +1,47 @@
+/*
+  CSS Personalizado para el Menú de la Tienda de Ropa
+  (Asume que estás usando Bootstrap 5)
+*/
+
+/* 1. Personalización de Colores (Opcional: si quieres un color diferente a 'bg-dark') */
+/*
+.navbar.bg-dark {
+    background-color: #3f005c !important; /* Púrpura oscuro */
+
+
+.btn-outline-light {
+    color: #fff;
+    border-color: #fff;
+}
+.btn-outline-light:hover {
+    color: #3f005c;
+    background-color: #fff;
+    border-color: #fff;
+}
+*/
+
+/* 2. Estilo para los Íconos (Carrito y Búsqueda) */
+.navbar .nav-link i {
+    /* Añade un pequeño espacio a la derecha de los íconos */
+    margin-right: 5px;
+}
+
+/* 3. Resaltar el Badge del Carrito */
+.navbar .badge {
+    /* Utiliza un color que contraste con el fondo oscuro */
+    background-color: #0d6efd !important; /* Color azul primario de Bootstrap para el badge */
+    font-size: 0.75em;
+    vertical-align: top;
+    line-height: 1;
+}
+
+/* 4. Estilo de los enlaces al pasar el ratón (hover) */
+.navbar-dark .navbar-nav .nav-link:hover {
+    color: #f8f9fa; /* Color blanco claro, para asegurar visibilidad sobre fondo oscuro */
+    opacity: 0.8;
+}
+
+/* 5. Ajuste para la Marca/Logo */
+.navbar-brand {
+    letter-spacing: 1px;
+}

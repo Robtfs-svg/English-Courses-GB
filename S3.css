@@ -1,0 +1,33 @@
+/* ================================================= */
+/* ESTILOS ADICIONALES PARA PÁGINA DE EXÁMENES (TOEFL/IELTS) */
+/* ================================================= */
+
+/* Estilo para las tarjetas de las 4 secciones del examen */
+.section-card {
+    border: 1px solid #f0f0f0;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.section-card:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 4px 10px rgba(220, 53, 69, 0.1) !important;
+}
+
+/* Estilo para las cajas de recursos */
+.resource-box {
+    text-align: center;
+    min-height: 120px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    transition: background-color 0.3s ease;
+}
+
+.resource-box:hover {
+    background-color: #a71d2a !important; /* Oscurece el fondo rojo al pasar el ratón */
+    transform: scale(1.02);
+}
+
+.resource-box.bg-light:hover {
+    background-color: #fff3f3 !important; /* Fondo rosa pálido al pasar el ratón */
+}

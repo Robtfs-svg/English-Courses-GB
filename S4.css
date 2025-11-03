@@ -1,0 +1,44 @@
+/* ================================================= */
+/* ESTILOS ADICIONALES PARA PÁGINA CONVERSACIÓN */
+/* ================================================= */
+
+/* Lista de verificación personalizada */
+.check-list {
+    padding-left: 0;
+}
+
+.check-list li {
+    list-style: none;
+    position: relative;
+    padding-left: 25px;
+    margin-bottom: 10px;
+    font-weight: 500;
+    color: #343a40;
+}
+
+/* Icono rojo para la lista */
+.check-list li::before {
+    content: '✅'; /* Un checkmark simple para decorar */
+    color: #dc3545; 
+    font-weight: bold;
+    position: absolute;
+    left: 0;
+}
+
+/* Estilo de las tarjetas de nivel de conversación */
+.conversation-level-card {
+    border-color: #dc3545 !important;
+    background-color: #fff;
+    transition: transform 0.3s;
+}
+
+.conversation-level-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 5px 15px rgba(220, 53, 69, 0.15) !important;
+}
+
+/* Estilo de la tarjeta de Horarios (fondo rojo) */
+.conversation-schedule-card {
+    background-color: #dc3545 !important;
+    border-color: #a71d2a !important;
+}

@@ -1,0 +1,60 @@
+/* 1. Estilos para que las tarjetas siempre tengan la misma altura */
+/* Usamos Flexbox para estirar todas las tarjetas a la altura de la más alta en cada fila */
+.carousel-item .row.g-4 {
+    display: flex;
+    flex-wrap: wrap; /* Importante para que las columnas salten en móvil */
+}
+/* Asegura que todas las tarjetas dentro de un item de carrusel tengan la misma altura */
+.carousel-item .row.g-4 > [class*='col-'] {
+    display: flex;
+    align-items: stretch; 
+}
+.carousel-item .row.g-4 .card {
+    width: 100%;
+}
+
+
+/* 2. Estilos para controlar la altura de la imagen y evitar alargamiento */
+
+/* Contenedor que fija la altura de la imagen */
+.image-wrapper-slider {
+    height: 200px; /* Define la altura que quieres para todas tus imágenes (ajusta esto) */
+    overflow: hidden; /* Oculta cualquier parte de la imagen que exceda esta altura */
+    margin-bottom: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* La imagen en sí: ocupa todo el contenedor sin distorsionarse */
+.course-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* 🔑 CLAVE: Recorta la imagen para que cubra todo el espacio sin alargarse */
+    object-position: center;
+}
+
+/* 3. Estilos para asegurar que las flechas de navegación sean visibles */
+.carousel-control-prev,
+.carousel-control-next {
+    width: 5%; /* Ocupa menos espacio para no interferir con el contenido */
+    opacity: 1;
+}
+
+/* Ajuste de color para las flechas si tu fondo es blanco (puedes ajustar el color) */
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+    background-color: #dc3545; /* Fondo rojo para la flecha */
+    border-radius: 50%;
+    padding: 15px;
+    background-size: 50%; /* Ajusta el tamaño del icono de la flecha */
+}
+
+/* Media Query para móvil: asegura que los artículos se muestren correctamente */
+@media (max-width: 768px) {
+    /* En móvil, muestra solo un item del carrusel, forzando un carrusel 1 a 1 */
+    .carousel-item .col-md-6:not(:first-child),
+    .carousel-item .col-lg-4:not(:first-child) {
+        display: none;
+    }
+}

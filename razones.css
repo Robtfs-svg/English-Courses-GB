@@ -1,0 +1,66 @@
+/* ================================================= */
+/* ESTILOS SECCIÓN WHY US - MOSAICO DE IMÁGENES */
+/* ================================================= */
+
+/* Contenedor del número/icono */
+.icon-circle {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    font-size: 1.2rem;
+    font-weight: 700;
+    background-color: #dc3545; 
+    color: #FFFFFF;
+    flex-shrink: 0; 
+}
+
+/* Estilo de la tarjeta de razón (para alineación visual) */
+.reason-item {
+    min-height: 120px; /* Asegura que cada razón tenga una altura mínima */
+    border-radius: 10px;
+    border-right: 4px solid #dc3545 !important;
+    background-color: #f8f9fa !important;
+    transition: transform 0.3s ease;
+}
+
+.reason-item:hover {
+    transform: translateX(8px);
+    box-shadow: 0 4px 8px rgba(220, 53, 69, 0.1);
+}
+
+/* Contenedor de la Imagen para el Mosaico */
+.image-wrapper {
+    overflow: hidden;
+    border-radius: 8px;
+    /* Borde blanco entre imágenes para el efecto "mosaico" */
+    border: 3px solid #FFFFFF; 
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); 
+}
+
+/* Las imágenes dentro del mosaico (Crucial para el diseño 2x2) */
+.why-us-image {
+    width: 100%;
+    /* Altura uniforme para que las 4 imágenes (2x2) ocupen el mismo espacio vertical */
+    height: 100px; 
+    object-fit: cover;
+    transition: transform 0.5s ease;
+}
+
+.image-wrapper:hover {
+    box-shadow: 0 6px 15px rgba(220, 53, 69, 0.4);
+}
+
+.image-wrapper:hover .why-us-image {
+    transform: scale(1.05); 
+}
+
+/* Ajuste de alineación en escritorio (LADO A LADO) */
+@media (min-width: 992px) {
+    /* Ajuste de margen para que la pila de razones se balancee con el mosaico */
+    .col-lg-6 > .reason-item:last-of-type {
+        margin-bottom: 0 !important;
+    }
+}

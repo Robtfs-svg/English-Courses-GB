@@ -1,0 +1,174 @@
+/* ================================================= */
+/* ESTILOS GLOBALES BASE (APLICABLES EN TODAS LAS PÁGINAS) */
+/* ================================================= */
+
+/* Encabezado Rojo para todas las páginas de cursos */
+.course-header {
+    background-color: #dc3545 !important; /* Rojo de Bootstrap */
+}
+
+/* Lista de verificación personalizada (usada en Certificaciones, Metodología, etc.) */
+.check-list {
+    padding-left: 0;
+}
+
+.check-list li {
+    list-style: none;
+    position: relative;
+    padding-left: 25px;
+    margin-bottom: 10px;
+    font-weight: 500;
+    color: #343a40;
+}
+
+/* Icono rojo para la lista */
+.check-list li::before {
+    content: '✅'; /* Checkmark simple para decorar */
+    color: #dc3545; 
+    font-weight: bold;
+    position: absolute;
+    left: 0;
+}
+
+/* ================================================= */
+/* ESTILOS ESPECÍFICOS PARA PÁGINAS DE CURSOS */
+/* ================================================= */
+
+/* PÁGINA: Cursos de Conversación (curso_conversacion.html) */
+.conversation-level-card {
+    border-color: #dc3545 !important;
+    background-color: #fff;
+    transition: transform 0.3s;
+}
+
+.conversation-level-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 5px 15px rgba(220, 53, 69, 0.15) !important;
+}
+
+.conversation-schedule-card {
+    background-color: #dc3545 !important;
+    border-color: #a71d2a !important;
+}
+
+/* PÁGINA: Programas Kids & Teens (curso_kids_teens.html) */
+.activity-list {
+    padding-left: 20px;
+    font-size: 1.1rem;
+}
+
+.activity-list li {
+    margin-bottom: 8px;
+    color: #343a40;
+}
+
+.age-group-card {
+    border-top: 5px solid #dc3545; /* Borde superior rojo para destacar */
+    transition: box-shadow 0.3s ease;
+}
+
+.age-group-card:hover {
+    box-shadow: 0 8px 15px rgba(220, 53, 69, 0.2) !important;
+}
+
+/* PÁGINA: Inglés para Viajes (curso_viajes.html) */
+.travel-module-card {
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    background-color: #fff;
+    transition: transform 0.3s ease;
+    height: 100%; 
+}
+
+.travel-module-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
+    border-color: #dc3545;
+}
+
+/* PÁGINA: Preparación TOEFL/IELTS (curso_examenes.html) */
+.section-card {
+    border: 1px solid #f0f0f0;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.section-card:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 4px 10px rgba(220, 53, 69, 0.1) !important;
+}
+
+.resource-box {
+    text-align: center;
+    min-height: 120px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    transition: background-color 0.3s ease;
+}
+
+.resource-box:hover {
+    background-color: #a71d2a !important;
+    transform: scale(1.02);
+}
+
+.resource-box.bg-light:hover {
+    background-color: #fff3f3 !important;
+}
+
+
+/* ================================================= */
+/* ESTILOS ESPECÍFICOS PARA PÁGINAS INSTITUCIONALES */
+/* ================================================= */
+
+/* PÁGINA: Profesorado (profesores.html) */
+.teacher-img {
+    height: 250px; 
+    object-fit: cover; 
+}
+
+.teacher-card {
+    transition: all 0.3s ease;
+    border-top: 5px solid #dc3545; 
+}
+
+.teacher-card:hover {
+    box-shadow: 0 8px 20px rgba(220, 53, 69, 0.2) !important;
+    transform: translateY(-5px);
+}
+
+/* PÁGINA: Precios y Planes (precios.html) */
+.pricing-card {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    border: 1px solid #dc3545;
+    border-top-left-radius: 0.5rem;
+    border-top-right-radius: 0.5rem;
+}
+
+.pricing-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(220, 53, 69, 0.15) !important;
+}
+
+.pricing-card-highlighted {
+    border-color: #212529 !important; 
+    border-width: 3px !important;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.pricing-card-highlighted:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.25) !important;
+}
+
+.pricing-card-title {
+    font-size: 3.5rem;
+    font-weight: 700;
+}
+
+.pricing-card ul {
+    font-size: 1.05rem;
+    line-height: 1.8;
+}
+
+/* PÁGINA: Contacto (contacto.html) */
+/* No se requiere CSS adicional, ya que utiliza clases estándar de Bootstrap y los estilos base. */

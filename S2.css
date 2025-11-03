@@ -1,0 +1,26 @@
+/* ================================================= */
+/* ESTILOS ADICIONALES PARA PÁGINA BUSINESS ENGLISH */
+/* ================================================= */
+
+/* Lista de Beneficios */
+.benefits-list li {
+    position: relative;
+    padding-left: 25px;
+    font-size: 1.1rem;
+    color: #343a40;
+}
+
+/* Marca de verificación roja para los beneficios */
+.benefits-list li::before {
+    content: "✔️"; /* Opcional: Si no usas iconos */
+    color: #dc3545; /* Color rojo para la marca */
+    font-size: 1.2rem;
+    font-weight: 700;
+    position: absolute;
+    left: 0;
+}
+
+/* Estilo para las tarjetas de módulos (fondo claro) */
+.card.bg-light.shadow {
+    border-color: #dc3545 !important;
+}

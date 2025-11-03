@@ -1,0 +1,46 @@
+/* Variables de color usadas en esta sección */
+:root {
+    --rojo-principal: #dc3545; /* Rojo de Bootstrap 'danger' */
+    --gris-texto: #343a40;
+    --rojo-claro: #f8d7da; /* Fondo suave para la palabra del día */
+}
+
+/* ------------------------------------------- */
+/* ESTILOS PALABRA DEL DÍA */
+/* ------------------------------------------- */
+.daily-word-section {
+    background-color: var(--rojo-claro);
+    border-top: 5px solid var(--rojo-principal);
+    border-bottom: 5px solid var(--rojo-principal);
+    padding: 30px 0;
+    margin-bottom: 40px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+}
+.daily-word-title {
+    font-weight: 800;
+    color: var(--rojo-principal);
+    margin-bottom: 15px;
+}
+.word-box {
+    background-color: white;
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0 1px 6px rgba(0, 0, 0, 0.1);
+}
+.word-box strong {
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: var(--gris-texto);
+}
+.word-box .translation {
+    font-style: italic;
+    color: var(--rojo-principal);
+    font-weight: 600;
+    margin-left: 10px;
+}
+.word-box .example {
+    margin-top: 10px;
+    padding-top: 10px;
+    border-top: 1px dashed #ccc;
+    font-size: 0.95rem;
+}

@@ -1,0 +1,67 @@
+.hero-text-area {
+    /* Fondo rojo para la sección de texto */
+    background-color: #dc3545; /* Rojo principal */
+    /* Altura mínima: asegura que sea visible incluso en pantallas pequeñas antes de que cargue la imagen */
+    min-height: 500px; 
+}
+
+/* Estilo del texto dentro del Hero */
+.hero-text-area h1 span.text-dark {
+    color: #FFFFFF !important; /* Texto del logo en blanco si está en fondo rojo */
+}
+
+.hero-text-area h1 span.text-light {
+    color: #343a40 !important; /* Si quieres un contraste en el fondo rojo */
+    /* O puedes dejarlo en #FFFFFF si prefieres todo el texto blanco */
+}
+
+/* Contenedor del área de imagen (Mitad Derecha) */
+.hero-image-area {
+    /* Oculta la imagen en dispositivos pequeños para priorizar el texto */
+    display: none; 
+}
+
+/* La imagen en sí */
+.hero-image {
+    width: 100%;
+    /* Altura del 100% de su contenedor para que se estire y ocupe todo el espacio */
+    height: 100%; 
+    object-fit: cover; /* Asegura que la imagen cubra el área sin distorsionarse */
+}
+
+/* Estilo del Botón de Únete (Fondo Blanco, Texto Rojo) */
+.action-button-white {
+    background-color: #FFFFFF !important;
+    color: #dc3545 !important;
+    border: 2px solid #FFFFFF;
+}
+.action-button-white:hover {
+    background-color: #f8f9fa !important; /* Rojo al pasar el mouse */
+    border: 2px solid #dc3545;
+}
+
+/* Estilo del Botón de Contacto (Fondo Transparente/Borde Blanco, Texto Blanco) */
+.action-button-red {
+    border: 2px solid #FFFFFF !important;
+    color: #FFFFFF !important;
+}
+.action-button-red:hover {
+    background-color: #FFFFFF !important; /* Fondo blanco al pasar el mouse */
+    color: #dc3545 !important; /* Texto rojo al pasar el mouse */
+}
+
+
+/* MEDIA QUERY: Activar el layout de 50/50 en pantallas grandes (lg) */
+@media (min-width: 992px) {
+    .hero-image-area {
+        display: block; /* Muestra la imagen */
+    }
+    .hero-text-area {
+        min-height: auto; /* Ajusta la altura al contenido o a la imagen */
+        height: 67.3vh; /* Opcional: Hace que ocupe el 100% de la altura de la vista (Full-Screen Hero) */
+    }
+    .hero-image {
+        height: 100vh; /* Hace que la imagen también ocupe el 100% de la altura de la vista */
+    }
+    
+}

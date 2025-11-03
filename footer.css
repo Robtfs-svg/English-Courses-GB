@@ -1,0 +1,46 @@
+/* ================================================= */
+/* ESTILOS FOOTER */
+/* ================================================= */
+
+#main-footer {
+    background-color: #dc3545; /* Fondo rojo principal */
+    color: #FFFFFF; /* Texto general en blanco */
+}
+
+/* Estilo del logo dentro del footer (ajustado para alto contraste en fondo rojo) */
+#main-footer .logo-red-footer {
+    color: #343a40; /* Usamos un color oscuro para que contraste con el fondo rojo */
+}
+
+#main-footer .logo-white-footer {
+    color: #FFFFFF; /* Blanco */
+}
+
+/* Títulos de las columnas del footer */
+#main-footer h5 {
+    /* Color blanco-grisáceo para los títulos */
+    color: rgba(255, 255, 255, 0.8) !important;
+}
+
+/* Estilo de los enlaces del footer */
+.footer-link,
+.footer-social-link {
+    color: #f8f9fa; /* Blanco brillante */
+    text-decoration: none;
+    transition: color 0.3s ease, text-decoration 0.3s ease;
+}
+
+/* Efecto al pasar el ratón */
+.footer-link:hover,
+.footer-social-link:hover {
+    color: #FFFFFF; /* Blanco puro al pasar el ratón */
+    text-decoration: underline;
+}
+
+/* Ajuste de alineación en dispositivos móviles */
+@media (max-width: 767.98px) {
+    #main-footer .text-md-start,
+    #main-footer .text-md-end {
+        text-align: center !important;
+    }
+}

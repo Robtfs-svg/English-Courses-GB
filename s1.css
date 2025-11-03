@@ -1,0 +1,20 @@
+/* ================================================= */
+/* ESTILOS ADICIONALES PARA PÁGINA DE CURSO GENERAL */
+/* ================================================= */
+
+/* Estilo para los títulos de los ítems del acordeón */
+.accordion-button.bg-light {
+    background-color: #f8f9fa !important; /* Fondo claro para el botón */
+}
+
+.accordion-button:not(.collapsed) {
+    color: #a71d2a !important; /* Rojo oscuro cuando está abierto */
+    background-color: #ffebe5 !important; /* Fondo muy claro/rosado cuando está abierto */
+    border-color: #dc3545;
+    box-shadow: none;
+}
+
+/* Color del texto de las tarjetas de habilidades */
+.card-title.text-dark {
+    color: #343a40;
+}
